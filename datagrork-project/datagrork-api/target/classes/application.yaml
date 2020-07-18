@@ -1,0 +1,21 @@
+server:
+  servlet:
+    port: 8080
+    contextPath: /api
+
+spring:
+  application:
+    name: datagrork-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/datagrork
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          user_jdbc_metadata_default: false
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
